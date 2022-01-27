@@ -2,7 +2,7 @@ const { resourceTypeMap } = require('../util/config.json')
 // 点赞与取消点赞评论
 
 module.exports = (query, request) => {
-  query.cookie.os = 'pc'
+  query.cookie.os = 'android'
   query.t = query.t == 1 ? 'like' : 'unlike'
   query.type = resourceTypeMap[query.type]
   const data = {
